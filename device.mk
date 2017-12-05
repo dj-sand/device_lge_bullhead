@@ -233,7 +233,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
     android.hardware.audio.effect@2.0-impl \
-    android.hardware.broadcastradio@1.0-impl \
     android.hardware.soundtrigger@2.0-impl
 
 PRODUCT_PACKAGES += \
@@ -295,6 +294,7 @@ PRODUCT_PACKAGES += \
 TARGET_USES_NANOHUB_SENSORHAL := true
 NANOHUB_SENSORHAL_LID_STATE_ENABLED := true
 NANOHUB_SENSORHAL_SENSORLIST := $(LOCAL_PATH)/sensorhal/sensorlist.cpp
+NANOHUB_SENSORHAL_DIRECT_REPORT_ENABLED := true
 
 PRODUCT_PACKAGES += \
     sensors.bullhead \
